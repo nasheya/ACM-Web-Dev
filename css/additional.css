@@ -27,3 +27,34 @@
 	text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
 	-webkit-text-stroke: 1px black;
 }
+
+/* Code for the homepage */
+.home_styles {
+  padding: 40px 15px;
+  text-align: left;
+}
+
+
+/* Code needed for sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .footer_text {
+  margin: 20px 0;
+}
