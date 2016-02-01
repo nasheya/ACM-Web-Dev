@@ -1,4 +1,18 @@
-/* Banner styles for each page */
+/* Fonts for the page */
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/museosans/MuseoSans_500-webfont.eot');
+    src: url('../fonts/museosans/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans/MuseoSans_500-webfont.woff2') format('woff2'),
+         url('../fonts/museosans/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/museosans/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/museosans/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Banner styles for each page - supports multi-line phrases*/
 .banner { 
   max-width: 100%; /* actual img width */
   background-size: cover;
@@ -14,24 +28,30 @@
   align-items: center; /* align vertical */
 }
 
-/* Support Multi-line Phrases */
 .banner_text {
 	left: 0;
 	display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-size: 60px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 100px;
 	text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
 	-webkit-text-stroke: 1px black;
+  font-family: 'museo_sans500', 'Arial', sans-serif;
 }
 
-/* Code for the homepage */
-.home_styles {
+
+/* Code for the little bit of subtext */
+.sub_text {
   padding: 30px 15px 10px 15px;
   text-align: center;
+}
+
+.lead{
+  font-size: 28px;
+  margin-bottom: 0px;
 }
 
 
@@ -52,13 +72,121 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #75ABA5;
 }
 
 .container .footer_text {
   margin: 20px 0;
+  text-align: center;
+  color:  #ecf0f1;
 }
 
+
+/* Code for the columns */
 .col-md-7, .col-md-5 {
   padding: 0 20px 15px 20px;
+}
+
+
+/* Code for the logo */
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+  position: relative;
+  left: 0;
+  margin-left: -1000px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px; /* firefox bug fix */
+  position: relative;
+  float: left !important;
+  
+}
+
+.navbar .container-fluid, .navbar-brand {
+    padding-left:8px;
+}
+
+
+/* Hidden child rows */
+table .collapse.in {
+  display:table-row;
+}
+
+/*div.slider{
+  display: none;
+}*/
+
+
+/* Code for navbar */
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #75ABA5;
+}
+.navbar-default .navbar-brand {
+  color: #3e3e3e;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-text {
+  color: #3e3e3e;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #3e3e3e;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecf0f1;
+  background-color: #75ABA5;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecf0f1;
+  background-color: #75ABA5;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecf0f1;
+  background-color: #75ABA5;
+}
+.navbar-default .navbar-toggle {
+  border-color: #75ABA5;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #75ABA5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #3e3e3e;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #3e3e3e;
+}
+.navbar-default .navbar-link {
+  color: #3e3e3e;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecf0f1;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #3e3e3e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecf0f1;
+    background-color: #75ABA5;
+  }
 }
