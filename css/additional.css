@@ -1,3 +1,19 @@
+td.details-control {
+    background: url('doctorHelping.jpg') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
+
+div.slider {
+    display: none;
+}
+ 
+table.dataTable tbody td.no-padding {
+    padding: 0;
+}
+
 /* Fonts for the page */
 @font-face {
     font-family: 'museo_sans500';
@@ -114,9 +130,9 @@ table .collapse.in {
   display:table-row;
 }
 
-/*div.slider{
+.slider{
   display: none;
-}*/
+}
 
 
 /* Code for navbar */

@@ -12,6 +12,7 @@
     <title>Home | HealthWeb</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/additional.css" rel="stylesheet">
 
@@ -79,24 +80,45 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5">
-          <div class="panel panel-default">
+          <!-- <div class="panel panel-default">
           <table class="table table-responsive table-hover table-bordered" id="my_table">
     <tbody>
         <tr class="clickable" data-toggle="collapse" id="row1" data-target=".row1">
             <td>data</td>
         </tr>
         <tr class="collapse row1">
-            <td><div class="slider">- child row</div></td>
+            <td class="slider row1">- child row<p>ayy<p>lmao<p>whatup</td>
         </tr>
         <tr class="clickable" data-toggle="collapse" id="row2" data-target=".row2">
             <td>data</td>
         </tr>
         <tr class="collapse row2">
-            <td>- child row</td>
+            <td class= "slider">- child row</td>
         </tr>
     </tbody>
 </table>
-</div>
+</div> -->
+
+
+    <table id="example" class="display nowrap" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Item 1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-child-value="hidden 1">
+            <td class="details-control"></td>
+            <td>data 1a</td>
+        </tr>
+        <tr data-child-value="hidden 2">
+            <td class="details-control"></td>
+            <td>data 2a</td>
+        </tr>
+    </tbody>
+</table>
+
     </div>
         <div class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis commodo diam et interdum. Suspendisse dictum lectus eget odio sollicitudin pulvinar ac id tellus. Vivamus id mi ligula. Donec quis accumsan nisi, quis tincidunt lacus. Suspendisse velit est, porta vehicula ligula et, vehicula molestie urna. Cras quam est, egestas vitae orci elementum, imperdiet hendrerit nisi. Phasellus lobortis tempus odio. Suspendisse interdum turpis rhoncus lacus scelerisque dignissim. Etiam vulputate, turpis non congue interdum, sapien ante mattis diam, vel imperdiet nisi tellus nec erat. Duis mattis augue felis. Pellentesque orci sapien, vestibulum ultricies lectus vitae, elementum tristique nisi. Mauris ac dolor et libero convallis cursus vulputate et arcu. Donec sed tempus neque, pellentesque ullamcorper metus. Fusce sit amet augue porttitor, efficitur felis sit amet, varius velit. Curabitur in ultricies nibh.
 
@@ -118,6 +140,9 @@ Integer sollicitudin nunc neque, et convallis est mattis vitae. Nam ac est at pu
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/additional.js"></script>
+  
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
 
   </body>
 </html>
