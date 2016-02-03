@@ -36,7 +36,6 @@ function format ( d ) {
             '</tr>'+
             '<tr>'+
                 '<td>Service Hours:  </td>'+
-                '<td></td>'+
                 '<td>'+d.extn+'</td>'+
             '</tr>'+
             '<tr>'+
