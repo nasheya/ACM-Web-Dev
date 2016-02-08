@@ -28,6 +28,11 @@
   align-items: center; /* align vertical */
 }
 
+/* Tried to fix the banner text for safari without affecting chrome */
+::i-block-chrome,.banner_text {
+     -webkit-transform: translateY(50%);
+}
+
 /* Original Way to Do It*/
 .banner_text {
 	left: 0;
@@ -40,7 +45,6 @@
   font-size: 100px;
 	text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
 	-webkit-text-stroke: 1px black;
-  -webkit-transform: translateY(50%);
   font-family: 'museo_sans500', 'Arial', sans-serif;
 }
 
@@ -59,6 +63,7 @@
   font-family: 'museo_sans500', 'Arial', sans-serif;
 }*/
 
+/* Fixes the stroke problem for Firefox */
 @-moz-document url-prefix() {
     .banner_text {
     color: white;
