@@ -225,7 +225,7 @@ table .collapse.in {
 
 /*Styling for the map*/
 #map-canvas {
-  min-height: 500px;
+  height: 500px;
 }
 
 .controls {
