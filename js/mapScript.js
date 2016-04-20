@@ -3,6 +3,7 @@ var latAndLng = new google.maps.LatLng(37.5260016, -77.438847);
 var mapOptions = {
 	zoom: 11,
 	center: latAndLng,
+	scrollwheel:  false
 };
 
 //Create map
@@ -38,7 +39,9 @@ searchBox.addListener('places_changed', function() {
      	markers.push(new google.maps.Marker({
       		map: map,
         	title: place.name,
-        	position: place.geometry.location
+        	position: place.geometry.location,
+        	icon: "../public/images/mapping/home.png",
+        	animation: google.maps.Animation.DROP
       	}));
 
       	if (place.geometry.viewport) {
@@ -54,7 +57,7 @@ searchBox.addListener('places_changed', function() {
 //Grabs location of user if geolocation is available and places marker at current location
 var currentLocationMarker = new google.maps.Marker({
 	map: map,
-	icon: "currentlocation.png",
+	icon: "../public/images/mapping/currentlocation.png"
 });
 if (navigator.geolocation) {
 	navigator.geolocation.getCurrentPosition(function(position){
@@ -72,7 +75,9 @@ if (navigator.geolocation) {
 	});
 }
 
-createMarker("28 Westhampton Way, Richmond, VA", "one");
+// createMarker("108 Cowardin Avenue, Richmond, VA 23224", "one");
+// createMarker("8600 Quioccasin Road, Suite 105, Richmond, VA 23229", "one");
+
 
 //Create markers given address
 //className is provided to place innerHTML into info window
@@ -98,18 +103,3 @@ function createMarker(address, className) {
 		}
 	});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
